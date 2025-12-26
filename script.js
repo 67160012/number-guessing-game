@@ -71,3 +71,12 @@ function resetGame() {
 }
 // เริ่มเกมเมื่อโหลดหน้า
 window.addEventListener("load", initializeGame);
+
+// ฟังก์ชันเริ่มเกมใหม่
+function resetGame() {
+ initializeGame();
+ document.getElementById("resultContainer").innerHTML = "";
+ document.getElementById("guessInput").value = "";
+ document.getElementById("guessInput").focus();
+}
+// ...existing code...
