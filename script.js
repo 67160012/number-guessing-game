@@ -32,7 +32,7 @@ function checkGuess() {
  `;
  return;
  }
- attemptCount++;
+attemptCount++;
  if (guessValue === secretNumber) {
  resultContainer.innerHTML = `
  <div class="alert alert-success" role="alert">
